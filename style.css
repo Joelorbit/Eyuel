@@ -5,7 +5,7 @@ scroll-behavior:smooth;
 text-decoration:none;
 }
 :root {
---bg-color:#080808;
+--bg-color:#614848;
 --main-color:#32dffd;
 --text-color:#f1f1f1;
 }
@@ -33,10 +33,14 @@ z-index:100;
     font-weight: bold;
     font-size:20px;
     transition: 0.3s ;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 .logo:hover{
    transform:scale(1,1);
    transition: transform 0.5s;
+   background-color: #b8ff45;
 }
 .navbar a{
     color: var(--text-color);
@@ -73,37 +77,30 @@ color: #46f27a;
 .content p{
     font-size: 20px;
     color: var(--text-color);
+
+
+}
+.btn{
+    padding: 15px 20px;
+    background-color:var(--main-color) ;
+      color: #e7e7e7;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #2ded66;
+    animation: 0.3s ease;  
 }
 .content h3{
 font-style: unset;
 color: var(--main-color);
     
 }
-.btn{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-border-radius: 5px;
-background-color: salmon;
-width:fit-content;
-z-index: -1;
-padding: 10px 20px;
-line-height: 100%;
-}
-.btn::after{
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid salmon;
-    
-    left: 100%;
-    top: -10px;
-    animation: alternate;
-}
-.btn::after:hover{
-    color: var(--main-color);
-    animation: alternate .5s   alternate-reverse delay iteration-count direction fill-mode;
-}
+
+
 .content2{
     max-width: 800px;
     padding: 0% 10%;
@@ -112,7 +109,7 @@ line-height: 100%;
 }
 .content2 h1{
 font-size: larger,40px;
-color: #243ed1;
+color: #e2ec1d;
 }
 .content2 p{
     font-size: 20px;
@@ -127,8 +124,47 @@ color: #243ed1;
 }
 .content3 h1{
 font-size: larger,40px;
-color: #46f27a;
+color: #e6a03f;
 }
 .content3 p{
     font-size: 20px;
-        color: var(--text-color);}
+    color: var(--text-color);}
+
+
+.container{
+background-color: #ffffff;
+    max-width: 600px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin: 50px auto;
+}
+.container h1{
+align-items: center;
+margin-bottom: 20px;
+color: #333;
+}
+form input,textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    padding: 15px;
+    
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 20%;
+}
+.pp{
+    font-size: 20px;
+    color: #cf6060;
+    margin-top: 20px;
+}
