@@ -10,8 +10,7 @@ text-decoration:none;
 --text-color:#f1f1f1;
 }
 body{
-   background-image:url("new.webp")
-
+   background-color: var(--bg-color)
     
 }
 header{
@@ -113,7 +112,7 @@ line-height: 100%;
 }
 .content2 h1{
 font-size: larger,40px;
-color: #46f27a;
+color: #243ed1;
 }
 .content2 p{
     font-size: 20px;
